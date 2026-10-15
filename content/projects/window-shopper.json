@@ -18,7 +18,7 @@
     "/media/7.jpg",
     "/media/5.jpg"
   ],
-  "video_loop": "/media/window-shopper-loop.mp4",
+  "video_loop": "media/window-shopper-loop.mp4",
   "order": 10,
   "published": true
 }
