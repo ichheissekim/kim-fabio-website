@@ -1,0 +1,27 @@
+{
+  "title": "Medusa",
+  "slug": "medusa",
+  "category": "Feature Film / 2023",
+  "summary": "Writing and directing a feature-length film, developed and realised in collaboration with a larger cast and crew.",
+  "roles": "Direction / Screenplay",
+  "year": "2023",
+  "heading": "A feature film.",
+  "description": "Medusa (2023) is a feature-length psychological thriller with surreal elements, set in a small town near the Thuringian Forest. When a young man arrives for a date that never takes place, his evening takes an unexpected and increasingly unsettling turn.\n\nThe film was produced by ilmpressions, a student-run film production initiative at the Technical University of Ilmenau, Germany. Developed and realized by a team of more than 50 students, the project brought together different creative and technical departments to produce an independent feature film.\n\nWritten and directed by Kim-Fabio Klein, Medusa premiered on July 15, 2023 at the Audimax of TU Ilmenau.",
+  "cover": "/media/medusa-poster-1.jpeg",
+  "gallery": [
+    "/media/img9478.jpg",
+    "/media/img9487.jpg",
+    "/media/img9489.jpg",
+    "/media/img9473.jpg",
+    "/media/img9474.jpg",
+    "/media/img9475.jpg",
+    "/media/img9476.jpg",
+    "/media/img9477.jpg",
+    "/media/img9483.jpg",
+    "/media/img9488.jpg"
+  ],
+  "video_url": "youtube.com/watch?v=S74KPJloQdg",
+  "video_loop": "/media/Medusa.mp4",
+  "order": 20,
+  "published": true
+}

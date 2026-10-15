@@ -1,0 +1,24 @@
+{
+  "title": "Window Shopper",
+  "slug": "window-shopper",
+  "category": "Short Film / 2026",
+  "summary": "A surreal short film made through an unusually independent production process — from writing and directing to cinematography, editing and sound design.",
+  "roles": "Direction / Cinematography / Editing / Acting / Editing / Sound Design",
+  "year": "2026",
+  "heading": "One film. Many roles.",
+  "description": "A night photographer discovers a mannequin and begins taking parts of it home. What follows is a surreal reversal of the gaze and a pursuit through the city after dark.\n\nProduced independently with a minimal crew, Window Shopper explores voyeurism, objectification and the uneasy relationship between the observer and the observed.\n\nThe film has been screened at festivals in Germany and the United States, including the Fantasy Filmfest 2026 across seven German cities. Following its world premiere at the UNCW Reel Teal Film Festival in North Carolina, it went on to receive the Darkest Vision Award at the Anglerfish Film Festival.\n\nFestival Selections & Awards\n\n- Fantasy Filmfest 2026 — Germany\n- Anglerfish Film Festival — Darkest Vision Award\n- UNCW Reel Teal Film Festival — World Premiere, USA",
+  "cover": "/media/titelbild.jpg",
+  "gallery": [
+    "/media/10.jpg",
+    "/media/8.jpg",
+    "/media/12.jpg",
+    "/media/3.jpg",
+    "/media/6.jpg",
+    "/media/13.jpg",
+    "/media/7.jpg",
+    "/media/5.jpg"
+  ],
+  "video_loop": "/media/window-shopper-loop.mp4",
+  "order": 10,
+  "published": true
+}

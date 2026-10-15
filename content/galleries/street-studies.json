@@ -1,0 +1,30 @@
+{
+  "title": "Street Studies",
+  "slug": "street-studies",
+  "description": "Street photography and observations of everyday life.",
+  "cover": "/media/dscf1214-1.jpg",
+  "gallery": [
+    "/media/dscf5314.jpg",
+    "/media/dscf9064.jpg",
+    "/media/dscf0158.jpg",
+    "/media/dscf6799.jpg",
+    "/media/dscf0442.jpg",
+    "/media/dscf1954.jpg",
+    "/media/dscf1787.jpg",
+    "/media/dscf1823.jpg",
+    "/media/dscf1918.jpg",
+    "/media/dscf0191.jpg",
+    "/media/dscf2269.jpg",
+    "/media/dscf6593.jpg",
+    "/media/dscf2906.jpg",
+    "/media/dscf2965.jpg",
+    "/media/dscf3903.jpg",
+    "/media/dscf4584.jpg",
+    "/media/dscf5286.jpg",
+    "/media/dscf6522.jpg",
+    "/media/dscf6865.jpg",
+    "/media/dscf9040.jpg"
+  ],
+  "order": 10,
+  "published": true
+}

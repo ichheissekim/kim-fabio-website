@@ -1,0 +1,33 @@
+{
+  "title": "Concerts",
+  "slug": "concerts",
+  "description": "A collection of live performances, capturing the energy, atmosphere and fleeting moments on and off stage.",
+  "cover": "/media/dscf0420.jpg",
+  "gallery": [
+    "/media/dscf0535.jpg",
+    "/media/dscf4963.jpg",
+    "/media/dscf0577.jpg",
+    "/media/dscf1025.jpg",
+    "/media/dscf4567.jpg",
+    "/media/dscf4731.jpg",
+    "/media/dscf8820.jpg",
+    "/media/dscf0573.jpg",
+    "/media/dscf0633.jpg",
+    "/media/dscf1050.jpg",
+    "/media/dscf1340.jpg",
+    "/media/dscf4611.jpg",
+    "/media/dscf5005.jpg",
+    "/media/dscf5160.jpg",
+    "/media/dscf5492.jpg",
+    "/media/dscf5523.jpg",
+    "/media/dscf5537.jpg",
+    "/media/dscf5650.jpg",
+    "/media/dscf5783.jpg",
+    "/media/dscf6107.jpg",
+    "/media/dscf8239.jpg",
+    "/media/dscf8471.jpg",
+    "/media/dscf8734.jpg",
+    "/media/dscf8789.jpg"
+  ],
+  "published": true
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Backrooms",
+  "slug": "backrooms",
+  "description": "An exploration of overlooked and transitional spaces.",
+  "cover": "/media/000020600036.jpg",
+  "gallery": [
+    "/media/000020600034.jpg",
+    "/media/000020600013.jpg",
+    "/media/r1-08589-0017.jpg",
+    "/media/000020600014.jpg",
+    "/media/r1-08995-011a.jpg",
+    "/media/r1-08589-016a.jpg",
+    "/media/r1-08995-0010.jpg",
+    "/media/000020600015.jpg"
+  ],
+  "order": 20,
+  "published": true
+}

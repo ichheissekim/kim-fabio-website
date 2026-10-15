@@ -1,0 +1,31 @@
+{
+  "title": "Music Videos",
+  "slug": "music-videos",
+  "category": "Selected practice / Music & Performance",
+  "summary": "Concept development, camera work, lighting, editing and colour grading for musicians and live performances. Selected projects: Yara — Erwachsen sein · Blue Beyond — live performances.",
+  "roles": "Production / Cinematography / Postproduction",
+  "year": "Selected work",
+  "heading": "Music and performance.",
+  "description": "Selected work includes Yara — Erwachsen sein and two Blue Beyond performance productions.",
+  "cover": "/media/bildschirmfoto-2026-10-13-um-141437.jpg",
+  "gallery": [
+    "/media/bildschirmfoto-2026-10-13-um-141914.jpg",
+    "/media/bildschirmfoto-2026-10-13-um-141528.jpg",
+    "/media/bildschirmfoto-2026-10-13-um-142115.jpg",
+    "/media/bildschirmfoto-2026-10-13-um-141630.jpg",
+    "/media/bildschirmfoto-2026-10-13-um-142320.jpg",
+    "/media/bildschirmfoto-2026-10-13-um-141706.jpg",
+    "/media/bildschirmfoto-2026-10-13-um-141903.jpg",
+    "/media/bildschirmfoto-2026-10-13-um-141513.jpg",
+    "/media/bildschirmfoto-2026-10-13-um-141942.jpg",
+    "/media/bildschirmfoto-2026-10-13-um-142355.jpg",
+    "/media/bildschirmfoto-2026-10-13-um-142016.jpg",
+    "/media/bildschirmfoto-2026-10-13-um-142102.jpg",
+    "/media/bildschirmfoto-2026-10-13-um-142124.jpg",
+    "/media/bildschirmfoto-2026-10-13-um-142201.jpg"
+  ],
+  "video_url": "https://www.youtube.com/watch?v=fxHZYvnsIZU",
+  "video_loop": "/media/Musdikvideos.mp4",
+  "order": 30,
+  "published": true
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Shapes & Waves",
+  "slug": "shapes-and-waves",
+  "category": "Visual experiments / Photography & graphic design",
+  "summary": "An experimental series combining photography, manipulated forms and wave-like structures.",
+  "roles": "Photography / Image manipulation / Graphic design",
+  "year": "Experimental work",
+  "heading": "Photography in motion.",
+  "description": "Shapes & Waves explores the transformation of photographic images through graphic forms and wave-like distortions. A visual experiment with structure, movement and abstraction.",
+  "cover": "/media/1-1.jpg",
+  "gallery": [
+    "/media/2-1.jpg",
+    "/media/3-1.jpg",
+    "/media/4-1.jpg",
+    "/media/5-1.jpg",
+    "/media/6-1.jpg",
+    "/media/7-1.jpg"
+  ],
+  "order": 45,
+  "published": true
+}

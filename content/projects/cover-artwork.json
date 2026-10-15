@@ -1,0 +1,17 @@
+{
+  "title": "Cover Artwork",
+  "slug": "cover-artwork",
+  "category": "Selected practice / Design for music",
+  "summary": "Photography-led artwork, graphic design and visual concepts for music releases. Selected work: Paradigm — I’ll Find You · INDULIN — Life Pulse EP.",
+  "roles": "Photography / Art Direction / Design",
+  "year": "Selected work",
+  "heading": "Design for music.",
+  "description": "Selected artwork for Paradigm and INDULIN.",
+  "cover": "/media/cover-3.jpg",
+  "gallery": [
+    "/media/cover-2.jpg"
+  ],
+  "video_url": "youtube.com/watch?v=rBpFw2UkJrA&list=RDrBpFw2UkJrA&start_radio=1",
+  "order": 40,
+  "published": true
+}
