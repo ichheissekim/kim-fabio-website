@@ -240,7 +240,18 @@ const safeUrl=s=>{try{const u=new URL(s,location.href);return ['https:','http:']
 const media=s=>{if(!s)return '';const u=String(s);return /^(\/media\/|media\/|https:\/\/)/.test(u)?u.replace(/^\/media\//,'media/') :''};
 let activeObserver=null;
 function stopDetailMedia(){if(activeObserver){activeObserver.disconnect();activeObserver=null;}document.querySelectorAll('#dynamic-detail video').forEach(v=>v.pause());}
-function loopMarkup(item){const src=media(item.video_loop);const poster=media(item.cover);if(!src)return `<div class="loop-poster">${poster?`<img src="${esc(poster)}" alt="${esc(item.title)} preview">`:'<span>SHOWREEL COMING SOON</span>'}<span class="loop-label">VIDEO PREVIEW / COMING SOON</span></div>`;return `<video class="detail-loop" muted loop playsinline preload="none" ${poster?`poster="${esc(poster)}"`:''} aria-label="${esc(item.title)} video preview"><source src="${esc(src)}" type="video/mp4"></video>`;}
+
+function loopMarkup(item){
+  const src = media(item.video_loop);
+  const poster = media(item.cover);
+
+  if (!src) {
+    return `<div class="loop-poster">${poster ? `<img src="${esc(poster)}" alt="${esc(item.title)} preview">` : '<span>SHOWREEL COMING SOON</span>'}<span class="loop-label">VIDEO PREVIEW / COMING SOON</span></div>`;
+  }
+
+  return `<video class="detail-loop" autoplay muted loop playsinline preload="auto" ${poster ? `poster="${esc(poster)}"` : ''} aria-label="${esc(item.title)} video preview"><source src="${esc(src)}" type="video/mp4"></video>`;
+}
+
 function setupDetailLoop(el){const v=el.querySelector('.detail-loop');if(!v)return;activeObserver=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting&&!document.hidden&&!matchMedia('(prefers-reduced-motion: reduce)').matches){v.play().catch(()=>{});}else{v.pause();}})},{threshold:.25});activeObserver.observe(v);}
 function renderMusicEntries(item){const entries=Array.isArray(item.music_videos)?item.music_videos:[];if(!entries.length)return `<section class="music-list"><div class="music-list-head"><h2>SELECTED MUSIC VIDEOS</h2><span>Individual projects will appear here.</span></div></section>`;return `<section class="music-list"><div class="music-list-head"><h2>SELECTED MUSIC VIDEOS</h2><span>${String(entries.length).padStart(2,'0')} PROJECTS</span></div><div class="music-list-grid">${entries.map((v,i)=>{const link=safeUrl(v.url),thumb=media(v.thumbnail);return `<article class="music-list-card">${link?`<a href="${esc(link)}" target="_blank" rel="noopener noreferrer" aria-label="Watch ${esc(v.title||'music video')}">`:''}<div class="music-list-thumb">${thumb?`<img src="${esc(thumb)}" loading="lazy" alt="${esc(v.title||'Music video')}">`:`<span>${esc(v.title||'MUSIC VIDEO')}</span>`}</div><div class="music-list-meta"><strong>${String(i+1).padStart(2,'0')} / ${esc(v.title||'Untitled')}</strong><span>${link?'WATCH ↗':'COMING SOON'}</span></div>${link?'</a>':''}${v.description?`<p>${esc(v.description)}</p>`:''}</article>`}).join('')}</div></section>`;}
 function renderProfile(el){
