@@ -19,3 +19,16 @@ jobs:
         run: python build.py
       - name: Check generated website
         run: test -s index.html
+
+      - name: Save website preview
+        uses: actions/upload-artifact@v4
+        with:
+          name: website-preview
+          path: |
+            index.html
+            impressum.html
+            datenschutz.html
+            style.css
+            experimental.css
+            site.js
+            media/
