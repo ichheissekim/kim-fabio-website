@@ -120,6 +120,18 @@ footer .hy-contact{
  .album-page .album-heading h1{font-size:clamp(34px,9vw,62px)}
  .profile-page .profile-head h1{font-size:clamp(40px,9vw,70px)}
 }
+ /* Prevent horizontal scrolling on mobile */
+@media (max-width: 760px) {
+  html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  .main, .detail, footer {
+    max-width: 100%;
+  }
+}
 </style><style>
 /* v1.2 — editorial photo album pages */
 .album-page{background:#f1efe9;color:#1c1c1a;min-height:100vh;padding:105px clamp(22px,5vw,85px) 100px;font-family:Arial,Helvetica,sans-serif}
