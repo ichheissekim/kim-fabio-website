@@ -1,0 +1,189 @@
+media:
+  input: media
+  output: /media
+  rename: safe
+  categories: [image, video]
+content:
+  - name: projects
+    label: Film, Music Videos & Cover Artwork
+    type: collection
+    path: content/projects
+    format: json
+    filename: "{primary}.json"
+    view:
+      primary: title
+      fields: [title, category, published, order]
+    fields:
+      - name: title
+        label: Projekttitel
+        type: string
+        required: true
+      - name: slug
+        label: URL-Kurzname (z.B. neuer-film)
+        type: string
+        required: true
+        pattern: "^[a-z0-9-]+$"
+      - name: category
+        label: Kategorie und Jahr
+        type: string
+      - name: summary
+        label: Kurzbeschreibung auf Startseite
+        type: text
+      - name: roles
+        label: Meine Aufgaben / Rollen
+        type: string
+      - name: year
+        label: Jahr
+        type: string
+      - name: heading
+        label: Überschrift auf Projektseite
+        type: string
+      - name: description
+        label: Langer Projekttext
+        type: text
+      - name: cover
+        label: Titelbild
+        type: image
+      - name: gallery
+        label: Weitere Bilder (Reihenfolge anpassbar)
+        type: image
+        list: true
+      - name: video_url
+        label: Video-Link (YouTube / Vimeo)
+        type: string
+      - name: video_loop
+        label: Showreel-Loop (MP4-Pfad, z.B. /media/window-shopper-loop.mp4)
+        type: string
+        description: MP4 zuerst unter Media hochladen, danach den Pfad eintragen. Leer lassen zeigt das Titelbild.
+      - name: music_videos
+        label: Einzelne Musikvideos (nur Music Videos)
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Videotitel
+            type: string
+          - name: thumbnail
+            label: Vorschaubild
+            type: image
+          - name: url
+            label: Video-Link (YouTube / Vimeo)
+            type: string
+          - name: description
+            label: Kurzbeschreibung (optional)
+            type: text
+      - name: order
+        label: Reihenfolge (kleine Zahl zuerst)
+        type: number
+      - name: published
+        label: Öffentlich sichtbar
+        type: boolean
+  - name: galleries
+    label: Fotogalerien
+    type: collection
+    path: content/galleries
+    format: json
+    filename: "{primary}.json"
+    view:
+      primary: title
+      fields: [title, published, order]
+    fields:
+      - name: title
+        label: Name der Fotoserie
+        type: string
+        required: true
+      - name: slug
+        label: URL-Kurzname
+        type: string
+        required: true
+        pattern: "^[a-z0-9-]+$"
+      - name: description
+        label: Beschreibung
+        type: text
+      - name: cover
+        label: Titelbild
+        type: image
+      - name: gallery
+        label: Fotos (Reihenfolge anpassbar)
+        type: image
+        list: true
+      - name: order
+        label: Reihenfolge
+        type: number
+      - name: published
+        label: Öffentlich sichtbar
+        type: boolean
+  - name: settings
+    label: Startseite und Kontakt
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: email
+        label: Kontakt-E-Mail
+        type: string
+      - name: intro
+        label: Kurzer Introtext
+        type: string
+      - name: about
+        label: Über mich
+        type: text
+      - name: hero_image
+        label: Startseite – Bild rechts neben KIM-FABIO
+        type: image
+        description: Querformat empfohlen. Leer lassen zeigt das Window-Shopper-Titelbild.
+      - name: about_cover
+        label: About – Porträt / Titelbild
+        type: image
+        description: Hochformat empfohlen. Klick auf das Bild öffnet dein persönliches Profil.
+      - name: about_heading
+        label: About – Überschrift im persönlichen Profil
+        type: string
+      - name: about_bio
+        label: About – Langer Vorstellungstext
+        type: text
+      - name: about_cv
+        label: About – Werdegang / Erfahrung (stichpunktartig)
+        type: text
+        description: Eine Station pro Zeile, z. B. 2023 – Feature film MEDUSA – Co-director. Leer lassen blendet den Abschnitt aus.
+      - name: about_gallery
+        label: About – Weitere Porträts und Behind-the-Scenes-Bilder
+        type: image
+        list: true
+      - name: instagram
+        label: Instagram-Link (für später)
+        type: string
+
+  - name: legal
+    label: Rechtliches – Impressum und Datenschutz
+    type: file
+    path: content/legal.json
+    format: json
+    fields:
+      - name: operator_name
+        label: Vollständiger Name (Impressum)
+        type: string
+      - name: address
+        label: Ladungsfähige Anschrift (Straße, Hausnummer, PLZ, Ort)
+        type: text
+      - name: email
+        label: E-Mail-Adresse für rechtliche Anfragen
+        type: string
+      - name: phone
+        label: Telefon (falls verwendet)
+        type: string
+      - name: vat_id
+        label: Umsatzsteuer-ID (nur falls vorhanden)
+        type: string
+      - name: register
+        label: Register und Registernummer (nur falls zutreffend)
+        type: string
+      - name: extra_imprint
+        label: Weitere gesetzliche Pflichtangaben (falls erforderlich)
+        type: text
+      - name: hosting_provider
+        label: Hosting-Anbieter (bei GitHub Pages so belassen)
+        type: string
+      - name: additional_privacy
+        label: Weitere Datenschutzangaben (nur falls zusätzliche Dienste eingesetzt werden)
+        type: text
