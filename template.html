@@ -1,0 +1,320 @@
+ <!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Kim-Fabio — Hybrid Preview v1.1</title><meta content="Kim-Fabio — Film, Photography &amp; Visual Arts" name="description"/><style>
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;600;700&display=swap');
+:root{--paper:#f1efe9;--ink:#171715;--red:#d22c22;--line:#bdbab2}*{box-sizing:border-box}html{scroll-behavior:auto}body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',Arial,sans-serif}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}header{position:sticky;top:0;z-index:20;background:rgba(241,239,233,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--ink);display:flex;align-items:center;justify-content:space-between;padding:17px 3.2%;gap:15px}.brand{font-size:13px;font-weight:700;letter-spacing:-.03em}nav{display:flex;gap:24px}nav a{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em}nav a:hover,.link:hover{color:var(--red)}.index{font-size:10px;text-transform:uppercase;letter-spacing:.13em}.hero{padding:7.5vw 3.2% 4vw;min-height:76vh;display:flex;flex-direction:column;justify-content:space-between}.eyebrow{display:flex;justify-content:space-between;border-top:1px solid var(--ink);padding-top:12px;font-size:11px;text-transform:uppercase;letter-spacing:.09em}.big{font-family:'Archivo Black',Impact,sans-serif;text-transform:uppercase;font-size:clamp(68px,11.7vw,215px);line-height:.84;letter-spacing:-.085em;margin:50px 0 30px;overflow-wrap:normal}.big span{display:block}.big span:last-child{padding-left:9vw}.hero-bottom{display:flex;justify-content:space-between;align-items:end;gap:25px}.hero-bottom p{max-width:380px;font-size:clamp(17px,1.65vw,26px);line-height:1.25;margin:0}.red-dot{color:var(--red)}.small{font-size:11px;letter-spacing:.07em;text-transform:uppercase}.section{padding:90px 3.2%}.section-head{display:flex;justify-content:space-between;align-items:baseline;border-top:1px solid var(--ink);padding-top:13px;margin-bottom:35px}.section-head h2{font-size:12px;text-transform:uppercase;letter-spacing:.1em;margin:0}.project{border-top:1px solid var(--line);padding:18px 0 32px;display:grid;grid-template-columns:55% 1fr;gap:4%;align-items:start}.project-visual{height:clamp(260px,39vw,660px);background:#242422;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}.project-visual:before{content:'';position:absolute;inset:8%;border:1px solid #777;opacity:.4}.project-visual .placeholder{color:#d2d0c8;font-size:11px;text-transform:uppercase;letter-spacing:.2em;text-align:center;padding:25px}.project-visual .num{position:absolute;top:16px;left:18px;color:#fff;font-size:11px}.project-visual.medusa{background:#46413b}.project-visual.yara{background:#776e61}.project-visual.paradigm{background:#abaaa2}.project-info{display:flex;flex-direction:column;justify-content:space-between;min-height:220px}.project-info h3{font-family:'Archivo Black',Impact,sans-serif;font-size:clamp(36px,5.4vw,90px);line-height:.91;letter-spacing:-.065em;text-transform:uppercase;margin:10px 0 20px}.project-info p{font-size:15px;line-height:1.5;max-width:410px}.project-meta{display:flex;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding-top:12px;font-size:11px;text-transform:uppercase}.link{border:0;background:none;padding:0;text-transform:uppercase;font-size:12px;font-weight:700;letter-spacing:.06em;text-align:left}.photography{background:#1c1c1a;color:var(--paper);padding:90px 3.2%}.photography .section-head{border-color:#eee}.photo-grid{display:grid;grid-template-columns:1.25fr .8fr 1fr;gap:15px;align-items:end}.photo-tile{background:#41413e;height:330px;display:flex;justify-content:center;align-items:center;color:#c8c6c0;font-size:11px;text-transform:uppercase;letter-spacing:.12em;text-align:center;padding:15px}.photo-tile:nth-child(2){height:450px;background:#56534e}.photo-tile:nth-child(3){height:280px;background:#363633}.photo-label{font-size:11px;text-transform:uppercase;margin-top:10px}.about{display:grid;grid-template-columns:1fr 1fr;gap:10%;padding:110px 3.2%}.about h2{font-family:'Archivo Black',Impact,sans-serif;font-size:clamp(50px,7vw,115px);line-height:.9;letter-spacing:-.06em;text-transform:uppercase;margin:0}.about p{font-size:clamp(17px,1.6vw,25px);line-height:1.4;margin:0 0 25px}footer{background:var(--red);padding:45px 3.2% 30px;color:#fff;display:flex;justify-content:space-between;align-items:end;gap:30px}footer h2{font-family:'Archivo Black',Impact,sans-serif;font-size:clamp(42px,7vw,110px);letter-spacing:-.065em;line-height:.9;margin:0}footer a{text-decoration:underline}.detail{display:none}.detail.active{display:block}.main.hidden{display:none}.detail-hero{background:#171715;color:#f1efe9;padding:6vw 3.2% 3vw}.detail-hero h1{font-family:'Archivo Black',Impact,sans-serif;text-transform:uppercase;font-size:clamp(64px,12vw,200px);line-height:.85;letter-spacing:-.085em;margin:60px 0 45px}.detail-hero .filmframe{height:55vw;max-height:700px;background:#343431;display:grid;place-items:center;color:#bbb;font-size:12px;text-transform:uppercase;letter-spacing:.12em;border:1px solid #555}.detail-content{padding:80px 3.2%;display:grid;grid-template-columns:1fr 2fr;gap:8%}.detail-content h2{font-family:'Archivo Black',Impact,sans-serif;font-size:clamp(35px,5vw,75px);line-height:.96;letter-spacing:-.05em;text-transform:uppercase;margin:0}.detail-content p{font-size:19px;line-height:1.5;max-width:720px}.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:30px}.tags span{border:1px solid #999;padding:9px 12px;font-size:11px;text-transform:uppercase}.back{display:inline-block;font-size:12px;text-transform:uppercase;letter-spacing:.1em;padding:20px 0}.detail-gallery{padding:0 3.2% 90px;display:grid;grid-template-columns:1fr 1fr;gap:16px}.detail-gallery div{background:#4d4b46;height:30vw;display:grid;place-items:center;color:#ddd;font-size:11px;letter-spacing:.1em;text-transform:uppercase}@media(max-width:700px){header{padding:15px 5%}nav{gap:12px}nav a{font-size:9px}.hero{min-height:65vh;padding:65px 5% 45px}.big{font-size:clamp(53px,15vw,100px);margin:80px 0 50px}.big span:last-child{padding-left:0}.hero-bottom{align-items:start;flex-direction:column}.section,.photography{padding:65px 5%}.project{grid-template-columns:1fr}.project-visual{height:65vw}.project-info{min-height:0}.project-info h3{font-size:50px}.photo-grid{grid-template-columns:1fr 1fr}.photo-tile{height:220px!important}.photo-grid>div:last-child{grid-column:span 2}.about{grid-template-columns:1fr;padding:75px 5%}.about h2{margin-bottom:30px}footer{padding:40px 5%;flex-direction:column;align-items:start}.detail-hero{padding:55px 5%}.detail-hero h1{font-size:14vw}.detail-content{padding:60px 5%;grid-template-columns:1fr}.detail-gallery{padding:0 5% 60px}.detail-gallery div{height:40vw}}
+.service-project .project-info h3{font-size:clamp(35px,4.5vw,76px)}.credits{font-size:12px!important;color:#68655f;margin-top:24px}.photo-intro{display:flex;align-items:end;justify-content:space-between;gap:35px;margin:55px 0 50px}.photo-intro h2{font-family:'Archivo Black',Impact,sans-serif;font-size:clamp(70px,12vw,185px);line-height:.82;letter-spacing:-.08em;margin:0;color:var(--paper)}.photo-intro p{max-width:340px;font-size:clamp(16px,1.7vw,23px);line-height:1.4}.photo-entry{display:block}.photo-entry:hover .photo-tile{background:#65615b}.photo-label{display:flex;justify-content:space-between}.photo-bottom{border-top:1px solid #777;margin-top:45px;padding-top:18px;display:flex;justify-content:space-between;align-items:center;gap:25px;font-size:12px}.photo-cta{font-weight:700;text-transform:uppercase;white-space:nowrap}.photo-cta:hover{color:#ff7770}footer{background:#1c1c1a}footer h2{font-size:clamp(24px,3.1vw,48px);letter-spacing:-.05em;margin-top:12px}.photo-detail-hero{background:#262624}@media(max-width:700px){.photo-intro{display:block}.photo-intro h2{font-size:clamp(65px,14vw,110px)}.photo-intro p{margin-top:30px}.photo-bottom{align-items:start;flex-direction:column}.service-project .project-info h3{font-size:46px}} 
+/* Version 0.3 refinements */
+.big{font-size:clamp(64px,10.5vw,190px);letter-spacing:-.075em}.big span:last-child{padding-left:0}.red-dot{display:inline;color:var(--red)}
+.still-carousel{position:relative;margin-top:24px}.still-viewport{overflow:hidden;border:1px solid #555}.still-track{display:flex;transition:transform .4s ease}.still-slide{flex:0 0 100%;min-height:clamp(290px,50vw,680px);background:#343431;display:grid;place-items:center;color:#d1cec8;font-size:12px;letter-spacing:.13em;text-transform:uppercase;text-align:center;padding:24px}.still-slide:nth-child(2){background:#49453f}.still-slide:nth-child(3){background:#292d30}.still-slide:nth-child(4){background:#3c3536}.still-controls{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-top:12px}.still-controls button{border:1px solid #999;background:transparent;color:inherit;padding:9px 15px}.still-controls button:hover{background:#f1efe9;color:#171715}.still-controls span{font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+@media(max-width:700px){.big{font-size:clamp(48px,12vw,90px)}.still-slide{min-height:60vw}}
+
+.project-visual img,.photo-tile img,.still-slide img,.filmframe img,.detail-gallery img{width:100%;height:100%;object-fit:cover;display:block}.project-visual:has(img):before{display:none}.project-visual{color:#eee}.photo-tile{padding:0;overflow:hidden}.photo-entry:hover img{transform:scale(1.025)}.photo-tile img{transition:transform .3s}.detail-gallery>div{overflow:hidden}.detail-gallery img{object-fit:contain}.still-slide{padding:0}.still-slide img{max-height:680px;object-fit:contain}.empty-note{padding:30px;border:1px solid #888;font-size:13px}.project-info h3{overflow-wrap:anywhere}
+
+
+/* Standalone hybrid design study — preserves original Swiss editorial styling */
+.hero{min-height:calc(100vh - 80px);display:flex;flex-direction:column;justify-content:space-between;padding:40px 0 24px;overflow:hidden}
+.hy-top,.hy-bottom{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;font-size:11px;line-height:1.5;letter-spacing:.06em;text-transform:uppercase;font-weight:700}
+.hy-top>span:last-child{text-align:right}.hy-title{font-family:'Archivo Black',Impact,sans-serif;font-size:clamp(72px,15.7vw,260px);line-height:.8;letter-spacing:-.105em;white-space:nowrap;font-weight:900;margin:8vh 0 9vh;transform:translateX(-.018em)}.hy-title span{color:var(--red);letter-spacing:-.09em}.hy-bottom{align-items:end}.hy-bottom p{font-size:clamp(18px,2.5vw,34px);line-height:1.1;letter-spacing:-.035em;text-transform:none;margin:0 auto 0 5vw}.hy-bottom>span:last-child{text-align:right}.hy-star{font-size:40px;color:var(--red);line-height:1}
+.continued-work{padding-top:6vw}.hy-archive{margin-top:5vw}.hy-archive-head{display:flex;justify-content:space-between;border-top:1px solid currentColor;padding:20px 0 24px;font-size:11px;letter-spacing:.12em;font-weight:700}.hy-archive-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.hy-archive-item{display:block;color:inherit;text-decoration:none;font-size:12px}.hy-archive-image{aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;background:#333;color:#aaa;font-size:12px;margin-bottom:12px;transition:filter .25s,transform .25s}.hy-archive-item:hover .hy-archive-image{filter:brightness(1.2);transform:translateY(-4px)}.hy-contact{font-size:clamp(23px,3vw,44px);font-weight:800;line-height:1.1;margin:12px 0 0}footer h2{display:none}
+@media(max-width:750px){.hero{min-height:75vh}.hy-title{font-size:16vw;margin:9vh 0}.hy-top,.hy-bottom{font-size:9px}.hy-bottom p{font-size:19px;margin-left:0}.hy-star{display:none}.hy-archive-grid{grid-template-columns:1fr 1fr}.hy-archive-grid>a:last-child{grid-column:span 2}.hy-archive-head{font-size:9px}}
+
+/* v1.0: centered Swiss/experimental hero and photography carousel */
+.hero .hy-title{width:100%;text-align:center;transform:none;font-size:clamp(56px,14vw,240px);letter-spacing:-.095em;margin:10vh auto 10vh;line-height:.95}
+.hero .hy-bottom{justify-content:flex-end}
+.photo-carousel{margin-top:44px}
+.carousel-viewport{overflow:hidden;outline-offset:5px;touch-action:pan-y}
+.carousel-track{display:flex;gap:18px;transition:transform .65s cubic-bezier(.22,1,.36,1);will-change:transform}
+.carousel-slide{display:block;flex:0 0 calc((100% - 36px)/3);min-width:0}
+.carousel-image{height:clamp(220px,30vw,460px);position:relative;overflow:hidden;background:#292927;display:flex;align-items:center;justify-content:center;color:#a8a69f}
+.carousel-slide:nth-child(2n) .carousel-image{background:#393b39}
+.carousel-slide:nth-child(3n) .carousel-image{background:#48443f}
+.carousel-slide:nth-child(4n) .carousel-image{background:#272e31}
+.carousel-placeholder{font-size:clamp(12px,1.25vw,19px);letter-spacing:.03em;text-align:center;padding:12px}
+.carousel-image img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.carousel-overlay{position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,.65);padding:18px;color:white;font-size:11px;letter-spacing:.14em;opacity:0;transform:translateY(8px);transition:.25s}
+.carousel-slide:hover .carousel-overlay,.carousel-slide:focus-visible .carousel-overlay{opacity:1;transform:translateY(0)}
+.carousel-slide:hover img{transform:scale(1.035)}
+.carousel-caption{display:flex;justify-content:space-between;gap:10px;padding:15px 0 4px;border-top:1px solid currentColor;margin-top:10px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.035em}
+.carousel-controls{display:flex;justify-content:space-between;align-items:center;gap:12px;border-top:1px solid currentColor;margin-top:32px;padding-top:15px}
+.carousel-kicker{font-size:11px;font-weight:700;letter-spacing:.12em}
+.carousel-buttons{display:flex;align-items:center;gap:12px}
+.carousel-arrow,.carousel-pause{border:1px solid currentColor;border-radius:0;background:transparent;color:inherit;width:40px;height:40px;font-size:19px;display:grid;place-items:center}
+.carousel-arrow:hover,.carousel-pause:hover{background:currentColor;color:#f1efe9}
+.carousel-counter{font-size:12px;min-width:52px;text-align:center;font-variant-numeric:tabular-nums}
+@media(max-width:850px){.carousel-slide{flex-basis:calc((100% - 18px)/2)}.hero .hy-title{font-size:14vw}}
+@media(max-width:580px){.carousel-slide{flex-basis:83%}.carousel-image{height:65vw}.hero .hy-title{font-size:14vw;letter-spacing:-.09em}.carousel-kicker{font-size:9px}.carousel-buttons{gap:6px}.carousel-arrow,.carousel-pause{width:34px;height:34px}}
+@media(prefers-reduced-motion:reduce){.carousel-track{transition:none}.carousel-image img{transition:none}}
+
+/* v1.1: restrained scale and bold Swiss footer. Carousel unchanged. */
+@media (min-width:851px){
+  .hero .hy-title{font-size:clamp(58px,11.7vw,195px);letter-spacing:-.09em}
+  .project-info h3{font-size:clamp(34px,4.65vw,76px)}
+  .service-project .project-info h3{font-size:clamp(32px,4vw,68px)}
+  .photo-intro h2{font-size:clamp(65px,10vw,155px)}
+  .about h2{font-size:clamp(48px,6vw,96px)}
+  .project-visual{height:clamp(250px,35vw,570px)}
+}
+footer .hy-contact{
+  font-family:'Archivo Black',Impact,sans-serif;
+  font-weight:900;
+  text-transform:uppercase;
+  font-size:clamp(25px,3.1vw,47px);
+  line-height:.98;
+  letter-spacing:-.055em;
+  max-width:760px;
+}
+@media (max-width:850px){footer .hy-contact{font-size:clamp(25px,5.5vw,42px)}}
+
+/* Album thumbnails: preserve each photograph's native portrait/landscape ratio. */
+.album-page .album-grid{display:block;columns:5 160px;column-gap:clamp(9px,1vw,16px)}
+.album-page .album-grid .album-frame,.album-page .album-grid .album-frame:nth-child(n){display:block;width:100%;height:auto;min-height:0;aspect-ratio:auto;margin:0 0 clamp(9px,1vw,16px);padding:0;break-inside:avoid;-webkit-column-break-inside:avoid;overflow:hidden;line-height:0}
+.album-page .album-grid .album-frame img{display:block;width:100%;height:auto;max-height:none;aspect-ratio:auto;object-fit:contain;transform:none}
+.album-page .album-grid .album-frame:hover img{transform:none}
+.album-page .album-grid .album-frame:has(.album-placeholder-number){aspect-ratio:4/5;display:flex;line-height:normal}
+@media(max-width:1100px){.album-page .album-grid{columns:4 160px}}
+@media(max-width:760px){.album-page .album-grid{columns:2 135px;column-gap:10px}.album-page .album-grid .album-frame{margin-bottom:10px}}
+
+/* vNext: film previews and music video overview */
+.loop-shell{width:100%;max-width:1450px;margin:0 auto;background:transparent;display:flex;align-items:center;justify-content:center}
+.detail-loop,.loop-poster{display:block;width:100%;background:transparent;object-fit:contain}
+.detail-loop{height:auto;aspect-ratio:auto;border:0;box-shadow:none}
+.loop-poster{aspect-ratio:16/9}
+.loop-poster{position:relative;overflow:hidden;display:grid;place-items:center;color:#c4c1b9;font-size:12px;letter-spacing:.1em}
+.loop-poster img{width:100%;height:100%;object-fit:cover;opacity:.82}
+.loop-label{position:absolute;bottom:16px;left:18px;padding:8px 11px;background:rgba(15,15,15,.8);font-size:10px;letter-spacing:.12em}
+.music-list,.film-stills{padding:20px 3.2% 90px}
+.music-list-head{border-top:1px solid var(--ink);padding:20px 0 35px;display:flex;align-items:baseline;justify-content:space-between;gap:20px}
+.music-list-head h2,.film-stills h2{font-size:12px;letter-spacing:.12em;margin:0;text-transform:uppercase}
+.music-list-head span{font-size:11px;letter-spacing:.08em}
+.music-list-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:35px 18px}
+.music-list-thumb{aspect-ratio:16/9;background:#292927;display:grid;place-items:center;color:#d8d6d0;overflow:hidden}
+.music-list-thumb img{width:100%;height:100%;object-fit:cover;transition:transform .25s}
+.music-list-card a:hover img{transform:scale(1.03)}
+.music-list-meta{display:flex;justify-content:space-between;gap:12px;border-top:1px solid var(--ink);padding-top:12px;margin-top:10px;font-size:12px;text-transform:uppercase}
+.music-list-card p{font-size:13px;line-height:1.5;max-width:600px}
+.film-stills{border-top:1px solid var(--line)}
+.film-stills h2{margin-bottom:22px}
+.film-stills-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.film-stills-grid img{display:block;width:100%;height:auto;object-fit:contain}
+@media(max-width:700px){.music-list,.film-stills{padding:20px 5% 65px}.music-list-grid{grid-template-columns:1fr}.film-stills-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Compact project and gallery openings: show the actual work immediately. */
+.detail-hero{padding:22px 3.2% 38px}
+.detail-hero .back{padding:8px 0 14px}
+.detail-hero .eyebrow{padding-top:9px}
+.detail-hero h1{font-size:clamp(34px,5.1vw,84px);line-height:.96;letter-spacing:-.065em;margin:18px 0 22px;overflow-wrap:anywhere}
+.detail-hero .loop-shell,.detail-hero .still-carousel{margin-top:0}
+.detail-hero .detail-loop,.detail-hero .loop-poster{max-height:min(68vh,700px)}
+.detail-hero .still-slide{min-height:0;height:min(62vh,650px)}
+.album-page .album-heading{padding-top:22px;padding-bottom:28px;margin-bottom:16px}
+.album-page .album-heading h1{font-size:clamp(36px,5.6vw,90px);line-height:1;letter-spacing:-.055em;margin:12px 0 0}
+.album-page .album-grid{margin-top:16px}
+.profile-page .profile-head{padding-top:20px;padding-bottom:20px}
+.profile-page .profile-head h1{font-size:clamp(42px,5.8vw,90px);margin:12px 0}
+@media(max-width:760px){
+ .detail-hero{padding:20px 5% 30px}
+ .detail-hero h1{font-size:clamp(32px,9vw,58px);margin:14px 0 18px}
+ .detail-hero .still-slide{height:55vw;min-height:0}
+ .album-page .album-heading{padding:20px 0 22px}
+ .album-page .album-heading h1{font-size:clamp(34px,9vw,62px)}
+ .profile-page .profile-head h1{font-size:clamp(40px,9vw,70px)}
+}
+</style><style>
+/* v1.2 — editorial photo album pages */
+.album-page{background:#f1efe9;color:#1c1c1a;min-height:100vh;padding:105px clamp(22px,5vw,85px) 100px;font-family:Arial,Helvetica,sans-serif}
+.album-topline,.album-end{display:flex;justify-content:space-between;gap:20px;align-items:center;border-top:1px solid #252521;padding-top:16px;font-size:11px;font-weight:700;letter-spacing:.11em;text-transform:uppercase}
+.album-back,.album-end a{color:inherit;text-decoration:none}.album-back:hover,.album-end a:hover{color:#d32624}
+.album-heading{display:grid;grid-template-columns:minmax(0,2fr) minmax(220px,1fr);gap:30px;align-items:end;padding:75px 0 75px}
+.album-eyebrow{font-size:11px;letter-spacing:.16em;font-weight:700}
+.album-heading h1{font-family:'Archivo Black',Impact,'Arial Black',sans-serif;text-transform:uppercase;letter-spacing:-.075em;line-height:.91;font-size:clamp(54px,9.5vw,154px);margin:18px 0 0;overflow-wrap:anywhere}
+.album-heading p{font-size:clamp(14px,1.3vw,18px);line-height:1.6;max-width:390px;margin:0 0 5px}
+.album-demo-note{font-size:10px;font-weight:700;letter-spacing:.13em;border-top:1px solid #aaa;padding:12px 0 30px;opacity:.65}
+.album-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(10px,1.5vw,24px);align-items:start}
+.album-frame{grid-column:span 4;display:flex;position:relative;align-items:center;justify-content:center;min-width:0;aspect-ratio:4/5;border:0;background:#d0cdc5;color:#252521;overflow:hidden;cursor:pointer;text-align:center;transition:filter .25s}
+.album-frame img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}.album-frame:hover img{transform:scale(1.035)}.album-frame:hover{filter:brightness(.92)}
+.album-frame-0,.album-frame-6{grid-column:span 7;aspect-ratio:1.45}.album-frame-1,.album-frame-5{grid-column:span 5;aspect-ratio:1.04}.album-frame-3{grid-column:span 8;aspect-ratio:1.7}.album-frame-4{grid-column:span 4;aspect-ratio:4/5}.album-frame-2{grid-column:span 4;aspect-ratio:4/5}
+.album-frame:nth-child(6n+1){background:#c8c3b9}.album-frame:nth-child(6n+2){background:#aaa9a3}.album-frame:nth-child(6n+3){background:#d9d6ce}.album-frame:nth-child(6n+4){background:#b9b4ab}.album-frame:nth-child(6n+5){background:#dedbd3}.album-frame:nth-child(6n){background:#a6a49d}
+.album-placeholder-number{font-family:'Archivo Black',Impact,sans-serif;font-size:clamp(42px,8vw,110px);letter-spacing:-.09em;opacity:.28}.album-placeholder-caption{position:absolute;bottom:18px;left:18px;font-size:10px;letter-spacing:.12em;font-weight:700}
+.album-end{margin-top:85px;padding-top:20px}
+.album-lightbox[hidden]{display:none!important}.album-lightbox{position:fixed;inset:0;z-index:99999;background:#111;display:grid;grid-template-columns:72px 1fr 72px;align-items:center;color:#f1efe9;padding:70px 20px 65px}
+.album-close,.album-nav{border:0;background:transparent;color:inherit;cursor:pointer;font-size:25px}.album-close{position:absolute;top:20px;right:28px}.album-nav{height:100%;max-height:120px}.album-lightbox-center{min-width:0;min-height:0;height:100%;display:flex;align-items:center;justify-content:center}.album-lightbox-center img{max-width:100%;max-height:100%;object-fit:contain}
+.album-modal-placeholder{width:min(60vw,650px);height:min(60vh,550px);background:#77746e;display:flex;flex-direction:column;gap:12px;justify-content:center;align-items:center}.album-modal-placeholder strong{font-family:Impact,sans-serif;font-size:clamp(70px,13vw,180px);opacity:.5}.album-modal-placeholder span{font-size:11px;letter-spacing:.18em}
+.album-lightbox-caption{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);font-size:11px;letter-spacing:.1em;white-space:nowrap}
+@media(max-width:760px){.album-page{padding:75px 18px 65px}.album-heading{grid-template-columns:1fr;padding:45px 0}.album-heading h1{font-size:clamp(45px,12vw,90px)}.album-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.album-frame,.album-frame-0,.album-frame-1,.album-frame-2,.album-frame-3,.album-frame-4,.album-frame-5,.album-frame-6{grid-column:span 1;aspect-ratio:4/5}.album-frame:nth-child(5n+1){grid-column:span 2;aspect-ratio:1.5}.album-topline{font-size:9px}.album-lightbox{grid-template-columns:38px 1fr 38px;padding:70px 4px 65px}.album-nav{font-size:20px}}
+
+/* v1.3 — compact album grid: more photographs visible at once */
+@media (min-width: 1100px) {
+  .album-grid { grid-template-columns:repeat(10,minmax(0,1fr)); gap:clamp(9px,1vw,16px); }
+  .album-grid .album-frame { grid-column:span 2; aspect-ratio:4/5; }
+  .album-grid .album-frame:nth-child(9n+3),
+  .album-grid .album-frame:nth-child(9n+8) { grid-column:span 4; aspect-ratio:1.7; }
+  .album-grid .album-frame:nth-child(9n+6) { grid-column:span 2; aspect-ratio:1/1; }
+  .album-placeholder-number {font-size:clamp(30px,4vw,62px)}
+}
+@media (min-width: 761px) and (max-width: 1099px) {
+  .album-grid {grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
+  .album-grid .album-frame {grid-column:span 2;aspect-ratio:4/5}
+  .album-grid .album-frame:nth-child(7n+4) {grid-column:span 3;aspect-ratio:1.5}
+  .album-grid .album-frame:nth-child(7n+5) {grid-column:span 3;aspect-ratio:1.5}
+}
+@media (max-width:760px) {
+  .album-grid {grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+  .album-grid .album-frame {grid-column:span 1;aspect-ratio:4/5}
+  .album-grid .album-frame:nth-child(7n+4) {grid-column:span 2;aspect-ratio:1.65}
+}
+
+/* v2 — editorial split, balanced film stills, clean artwork viewer, profile */
+.hero{padding:clamp(28px,3vw,54px) 3.2% 25px;min-height:calc(100svh - 56px);gap:35px}
+.hero-split{display:grid;grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr);align-items:center;gap:clamp(25px,4vw,90px);flex:1;min-height:0}
+.hero .hero-copy .hy-title{font-size:clamp(45px,5.75vw,108px);text-align:left;width:auto;margin:0;letter-spacing:-.09em;white-space:nowrap;line-height:1.06}
+.hero-roles{font-size:clamp(9px,.8vw,12px);letter-spacing:.13em;margin:22px 0 0;font-weight:700}
+.hero-picture{height:clamp(300px,57vh,700px);background:#292824;overflow:hidden;display:grid;place-items:center}
+.hero-picture img{display:block;width:100%;height:100%;object-fit:cover}
+.hero-picture .hero-placeholder{color:#d4d0c7;letter-spacing:.15em;font-size:11px;text-align:center;padding:20px}
+.hero .hy-bottom{justify-content:flex-end}
+.film-stills-grid{display:block;columns:3 240px;column-gap:14px}
+.film-stills-grid img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;margin:0 0 14px;break-inside:avoid;-webkit-column-break-inside:avoid}
+/* Image slides should use the image's natural ratio, without gray side panels */
+.still-viewport{border:0;background:#171715}
+.still-slide,.still-slide:nth-child(n){background:#171715;min-height:0;height:min(72vh,760px);padding:0;display:flex;align-items:center;justify-content:center}
+.still-slide img{width:auto;max-width:100%;height:auto;max-height:100%;object-fit:contain}
+.about-feature{grid-template-columns:minmax(0,1fr) minmax(0,.8fr);align-items:center;gap:8%;border-top:1px solid var(--line)}
+.about-feature-copy h2{margin:22px 0 28px;font-size:clamp(52px,6vw,105px)}
+.about-feature-copy p{font-size:clamp(16px,1.5vw,23px);max-width:620px}
+.about-cta{display:inline-block;margin-top:12px;padding-bottom:8px;border-bottom:1px solid var(--ink);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.1em}
+.about-portrait{display:block;position:relative;min-height:440px;aspect-ratio:4/5;background:#292824;color:#e7e4db;overflow:hidden}
+.about-portrait img{display:block;width:100%;height:100%;object-fit:cover;position:absolute;inset:0;transition:transform .4s}
+.about-portrait:hover img{transform:scale(1.025)}
+.about-portrait-placeholder{display:grid;place-items:center;width:100%;height:100%;font-size:12px;letter-spacing:.12em;text-align:center;padding:30px}
+.about-portrait-label{position:absolute;bottom:15px;left:15px;background:var(--paper);color:var(--ink);font-size:10px;font-weight:700;letter-spacing:.1em;padding:10px 13px}
+.profile-page{padding:40px 3.2% 100px;min-height:85vh}
+.profile-top{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--ink);font-size:11px;letter-spacing:.12em}
+.profile-head{display:grid;grid-template-columns:1.1fr 1fr;gap:8%;align-items:end;padding:85px 0 50px}
+.profile-head h1{font-family:'Archivo Black',Impact,sans-serif;font-size:clamp(55px,9vw,150px);line-height:.95;letter-spacing:-.085em;margin:18px 0}
+.profile-head>div>p{font-size:11px;letter-spacing:.12em}
+.profile-bio h2{font-size:clamp(23px,3vw,43px);line-height:1.05;margin:0 0 20px}
+.profile-bio p{font-size:clamp(16px,1.35vw,21px);line-height:1.55;white-space:pre-line}
+.profile-gallery{background:#171715;color:#f1efe9;padding:15px}
+.profile-gallery{overflow:hidden}.profile-track{display:flex;transition:transform .4s ease}
+.profile-slide{flex:0 0 100%;height:min(67vh,700px);display:flex;justify-content:center;align-items:center}
+.profile-slide img{display:block;width:auto;max-width:100%;height:auto;max-height:100%;object-fit:contain}
+.profile-empty{color:#ccc;font-size:12px;letter-spacing:.12em}
+.profile-controls{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-top:12px;font-size:11px;letter-spacing:.1em}
+.profile-controls button{border:1px solid #777;background:transparent;color:inherit;padding:10px 14px}
+@media(max-width:760px){.hero{min-height:75svh;padding:35px 5% 25px}.hero-split{grid-template-columns:1fr;gap:25px}.hero .hero-copy .hy-title{font-size:clamp(47px,12vw,90px)}.hero-picture{height:45vh;min-height:220px}.hero-roles{margin-top:12px}.film-stills-grid{columns:2 145px;column-gap:9px}.film-stills-grid img{margin-bottom:9px}.about-feature{grid-template-columns:1fr;padding:65px 5%}.about-portrait{min-height:320px}.profile-page{padding:25px 5% 65px}.profile-head{grid-template-columns:1fr;padding:45px 0 30px}.profile-slide{height:50vh}.profile-controls{font-size:9px}.profile-controls button{padding:8px}}
+
+/* About profile: compact editorial portrait + readable CV */
+.profile-head{grid-template-columns:1fr;padding:55px 0 28px;gap:0}
+.profile-head h1{font-size:clamp(48px,7vw,110px);margin:14px 0}
+.profile-editorial{display:grid;grid-template-columns:minmax(220px,.78fr) minmax(0,1.22fr);gap:clamp(24px,5vw,85px);align-items:start;padding:22px 0 45px;border-top:1px solid var(--line)}
+.profile-editorial .profile-gallery{min-width:0;padding:10px;background:#171715}
+.profile-editorial .profile-slide{height:clamp(270px,35vw,510px)}
+.profile-editorial .profile-slide img{max-width:100%;max-height:100%;object-fit:contain}
+.profile-editorial .profile-bio h2{font-size:clamp(25px,3vw,44px);margin:0 0 22px}
+.profile-editorial .profile-bio p{font-size:clamp(15px,1.15vw,18px);line-height:1.65;white-space:pre-line;max-width:70ch}
+.profile-cv{border-top:1px solid var(--line);margin-top:32px;padding-top:22px}
+.profile-cv h3{font-size:11px;letter-spacing:.12em;text-transform:uppercase;margin:0 0 16px}
+.profile-cv-lines{white-space:pre-line;font-size:clamp(14px,1.05vw,17px);line-height:1.8}
+@media(max-width:760px){.profile-editorial{grid-template-columns:1fr;gap:28px}.profile-editorial .profile-gallery{max-width:480px}.profile-editorial .profile-slide{height:clamp(280px,80vw,480px)}.profile-head{padding:40px 0 25px}}
+.legal-footer-links{display:flex;gap:18px;margin-top:14px;flex-wrap:wrap}.legal-footer-links a{font-size:11px;text-transform:uppercase;letter-spacing:.07em;text-decoration:none;border-bottom:1px solid currentColor}.legal-footer-links a:hover{color:#ff8e85}
+
+/* v2.2 — quiet, automatic About portrait slideshow */
+.profile-editorial .profile-gallery{background:transparent;color:var(--ink);padding:0;overflow:hidden}
+.profile-editorial .profile-slide{height:clamp(270px,35vw,510px);background:transparent}
+.profile-editorial .profile-slide img{width:auto;height:auto;max-width:100%;max-height:100%;object-fit:contain}
+.profile-editorial .profile-track{transition:transform .8s ease-in-out}
+.profile-editorial .profile-controls{display:none}
+@media(max-width:760px){.profile-editorial .profile-slide{height:clamp(280px,80vw,480px)}}
+@media(prefers-reduced-motion:reduce){.profile-editorial .profile-track{transition:none}}
+ .brand{font-family:'Archivo Black',Impact,sans-serif;font-size:clamp(15px,1.3vw,20px);font-weight:900;letter-spacing:-.055em;line-height:1}
+/* Original wordmark: header and homepage only */
+.brand{display:inline-flex;align-items:center;flex:0 0 auto;line-height:1}
+.brand-logo{display:block;width:clamp(105px,10vw,165px);height:auto}
+.hero .hero-copy .hy-title{width:100%;max-width:100%;margin:0;line-height:1}
+.hero-logo{display:block;width:100%;height:auto;max-width:100%;object-fit:contain}
+@media(max-width:760px){.brand-logo{width:105px}.hero-logo{width:100%}}
+</style></head><body><header><a class="brand" href="#home" aria-label="Kim-Fabio – Startseite"><img class="brand-logo" src="media/kim-fabio-logo.png" alt="KIM-FABIO"></a><nav><a href="#work">Work</a><a href="#photography">Photography</a><a href="#about">About</a><a href="mailto:<!--EMAIL-->">Contact</a></nav><span class="index">Portfolio / <span class="current-year">2026</span></span></header><main class="main" id="main"><section class="hero" id="home"><div class="hy-top"><span>Independent creative practice<br/>Film / Photography / Visual Arts</span><span>Based in Germany<br/>Available for projects</span></div><div class="hero-split"><div class="hero-copy"><div class="hy-title"><img class="hero-logo" src="media/kim-fabio-logo.png" alt="KIM-FABIO"></div><p class="hero-roles">DIRECTOR &nbsp; / &nbsp; PHOTOGRAPHER &nbsp; / &nbsp; VISUAL ARTIST</p></div><div class="hero-picture"><!--HERO-IMAGE--></div></div><div class="hy-bottom"><span>Portfolio / <span class="current-year">2026</span><br/>Scroll to explore ↓</span></div></section><section class="section" id="work"><div class="section-head"><h2>01 / Selected works</h2><span class="small">A selection across disciplines</span></div><!--FEATURED-PROJECTS--></section><section class="photography" id="photography"><div class="section-head"><h2>02 / Still Images</h2><span class="small">An independent part of my practice</span></div><div class="photo-intro"><h2>STILL<br/>IMAGES<span class="red-dot">.</span></h2><p>Photography is as central to my work as filmmaking. From street observations and photographic series to live music and commissioned shoots.</p></div><div aria-label="Photography series" class="photo-carousel"><div aria-label="Scrollable photo albums" class="carousel-viewport" tabindex="0"><div class="carousel-track"><!--GALLERIES--></div></div><div class="carousel-controls"><span class="carousel-kicker">PHOTO SERIES / ALL WORK</span><div class="carousel-buttons"><button aria-label="Previous photo series" class="carousel-arrow" data-dir="-1" type="button">←</button><span aria-live="polite" class="carousel-counter">01 / 06</span><button aria-label="Next photo series" class="carousel-arrow" data-dir="1" type="button">→</button><button aria-label="Pause automatic scrolling" aria-pressed="false" class="carousel-pause" type="button">Ⅱ</button></div></div></div></section><section class="section continued-work" id="more-work"><div class="section-head"><h2>03 / More selected works</h2><span class="small">Music / Artwork</span></div><!--OTHER-PROJECTS--></section><section class="about about-feature" id="about"><div class="about-feature-copy"><span class="small">04 / About</span><h2>Beyond<br/>one<br/>medium<span class="red-dot">.</span></h2><p><!--ABOUT--></p><a class="about-cta" href="#profile">Explore my story ↗</a></div><a class="about-portrait" href="#profile" aria-label="Open personal profile"><!--ABOUT-COVER--><span class="about-portrait-label">ABOUT / KIM-FABIO ↗</span></a></section></main><div class="detail" id="dynamic-detail"></div><footer><div><span class="small">For projects and collaborations</span><p class="hy-contact">HAVE A PROJECT IN MIND?</p></div><div><a href="mailto:<!--EMAIL-->">Contact via email ↗</a><p class="small">© <span class="current-year">2026</span> Kim-Fabio</p><div class="legal-footer-links"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div></div></footer><script id="site-data" type="application/json"><!--SITE-DATA--></script><script>document.querySelectorAll('.current-year').forEach(el=>el.textContent=String(new Date().getFullYear()));const data=JSON.parse(document.getElementById('site-data').textContent);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const safeUrl=s=>{try{const u=new URL(s,location.href);return ['https:','http:'].includes(u.protocol)?u.href:''}catch{return ''}};
+const media=s=>{if(!s)return '';const u=String(s);return /^(\/media\/|media\/|https:\/\/)/.test(u)?u.replace(/^\/media\//,'media/') :''};
+let activeObserver=null;
+function stopDetailMedia(){if(activeObserver){activeObserver.disconnect();activeObserver=null;}document.querySelectorAll('#dynamic-detail video').forEach(v=>v.pause());}
+function loopMarkup(item){const src=media(item.video_loop);const poster=media(item.cover);if(!src)return `<div class="loop-poster">${poster?`<img src="${esc(poster)}" alt="${esc(item.title)} preview">`:'<span>SHOWREEL COMING SOON</span>'}<span class="loop-label">VIDEO PREVIEW / COMING SOON</span></div>`;return `<video class="detail-loop" muted loop playsinline preload="none" ${poster?`poster="${esc(poster)}"`:''} aria-label="${esc(item.title)} video preview"><source src="${esc(src)}" type="video/mp4"></video>`;}
+function setupDetailLoop(el){const v=el.querySelector('.detail-loop');if(!v)return;activeObserver=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting&&!document.hidden&&!matchMedia('(prefers-reduced-motion: reduce)').matches){v.play().catch(()=>{});}else{v.pause();}})},{threshold:.25});activeObserver.observe(v);}
+function renderMusicEntries(item){const entries=Array.isArray(item.music_videos)?item.music_videos:[];if(!entries.length)return `<section class="music-list"><div class="music-list-head"><h2>SELECTED MUSIC VIDEOS</h2><span>Individual projects will appear here.</span></div></section>`;return `<section class="music-list"><div class="music-list-head"><h2>SELECTED MUSIC VIDEOS</h2><span>${String(entries.length).padStart(2,'0')} PROJECTS</span></div><div class="music-list-grid">${entries.map((v,i)=>{const link=safeUrl(v.url),thumb=media(v.thumbnail);return `<article class="music-list-card">${link?`<a href="${esc(link)}" target="_blank" rel="noopener noreferrer" aria-label="Watch ${esc(v.title||'music video')}">`:''}<div class="music-list-thumb">${thumb?`<img src="${esc(thumb)}" loading="lazy" alt="${esc(v.title||'Music video')}">`:`<span>${esc(v.title||'MUSIC VIDEO')}</span>`}</div><div class="music-list-meta"><strong>${String(i+1).padStart(2,'0')} / ${esc(v.title||'Untitled')}</strong><span>${link?'WATCH ↗':'COMING SOON'}</span></div>${link?'</a>':''}${v.description?`<p>${esc(v.description)}</p>`:''}</article>`}).join('')}</div></section>`;}
+function renderProfile(el){
+ const site=data.site||{};
+ const pictures=[...(site.about_gallery||[]),site.about_cover].filter(Boolean).map(media).filter(Boolean).filter((src,i,all)=>all.indexOf(src)===i);
+ const desc=esc(site.about_bio||site.about||'');
+ const cv=esc(site.about_cv||'');
+ const slides=pictures.length?pictures.map((src,i)=>`<div class="profile-slide"><img src="${esc(src)}" alt="Kim-Fabio — portrait or behind the scenes ${i+1}"></div>`).join(''):'<div class="profile-slide profile-empty">ADD YOUR PORTRAITS IN PAGES CMS</div>';
+ el.innerHTML=`<div class="profile-page"><div class="profile-top"><a class="back" href="#about">← Back to about</a><span>ABOUT / PERSONAL PROFILE</span></div><div class="profile-head"><div><span class="small">INDEPENDENT CREATIVE PRACTICE</span><h1>KIM<span class="red-dot">·</span>FABIO</h1><p>FILM / PHOTOGRAPHY / VISUAL ARTS</p></div></div><div class="profile-editorial"><div class="profile-gallery"><div class="profile-track">${slides}</div><div class="profile-controls"><button type="button" class="profile-prev">← Previous</button><span class="profile-count">01 / ${String(Math.max(1,pictures.length)).padStart(2,'0')} · IMAGES</span><button type="button" class="profile-next">Next →</button></div></div><div class="profile-bio"><h2>${esc(site.about_heading||'Beyond one medium.')}</h2><p>${desc}</p>${cv?`<div class="profile-cv"><h3>Background / Experience</h3><div class="profile-cv-lines">${cv}</div></div>`:''}</div></div></div>`;
+ let current=0;const count=pictures.length,track=el.querySelector('.profile-track');
+ if(count>1){
+  const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)');
+  const timer=setInterval(()=>{
+   if(!el.isConnected){clearInterval(timer);return;}
+   if(document.hidden||location.hash!=='#profile'||reduceMotion.matches)return;
+   current=(current+1)%count;
+   track.style.transform=`translateX(-${current*100}%)`;
+  },4500);
+ }
+
+}
+let wasDetail=false;let mainScrollY=0;
+function jumpTo(y){window.scrollTo({top:y,left:0,behavior:'instant'});}
+function route(){stopDetailMedia();const hash=decodeURIComponent(location.hash.slice(1));const isProject=hash.startsWith('project/'),isGallery=hash.startsWith('gallery/');const item=isProject?data.projects.find(p=>p.slug===hash.slice(8)):isGallery?data.galleries.find(p=>p.slug===hash.slice(8)):null;const active=!!item||hash==='profile';if(active&&!wasDetail)mainScrollY=window.scrollY;document.getElementById('main').classList.toggle('hidden',active);const el=document.getElementById('dynamic-detail');el.classList.toggle('active',active);if(!active){document.body.style.overflow='';el.innerHTML='';if(wasDetail){jumpTo(mainScrollY);requestAnimationFrame(()=>jumpTo(mainScrollY));}wasDetail=false;return}wasDetail=true;if(hash==='profile'){renderProfile(el);jumpTo(0);return;}if(isGallery){renderGallery(item,el);jumpTo(0);return;}const photos=[item.cover,...(item.gallery||[])].filter(Boolean).filter(media);const title=esc(item.title);const video=safeUrl(item.video_url);const filmPage=['window-shopper','medusa','music-videos'].includes(item.slug);const frames=photos.length?photos.map((p,i)=>`<div class="still-slide"><img src="${esc(media(p))}" alt="${title} — image ${i+1}"></div>`).join(''):'<div class="still-slide">[ Images can be added in the CMS ]</div>';const stills=`<div class="still-carousel"><div class="still-viewport"><div class="still-track" id="still-track">${frames}</div></div><div class="still-controls"><button id="prev" type="button">← Previous</button><span id="counter">01 / ${String(Math.max(1,photos.length)).padStart(2,'0')} · Images</span><button id="next" type="button">Next →</button></div></div>`;
+el.innerHTML=`<div class="detail-hero"><a class="back" href="#work">← Back to work</a><div class="eyebrow"><span>${esc(item.category)}</span><span>${esc(item.year||'')}</span></div><h1>${title}<span class="red-dot">.</span></h1>${filmPage?`<div class="loop-shell">${loopMarkup(item)}</div>`:stills}</div><section class="detail-content"><h2>${esc(item.heading||'Selected work.')}</h2><div><p>${esc(item.description||item.summary)}</p>${item.roles?`<div class="tags"><span>${esc(item.roles)}</span></div>`:''}${video&&item.slug!=='music-videos'?`<p><a class="link" href="${esc(video)}" target="_blank" rel="noopener noreferrer">Watch film / trailer ↗</a></p>`:''}</div></section>${item.slug==='music-videos'?renderMusicEntries(item):''}${filmPage&&item.slug!=='music-videos'&&photos.length?`<section class="film-stills"><h2>SELECTED STILLS</h2><div class="film-stills-grid">${photos.map((src,i)=>`<img src="${esc(media(src))}" loading="lazy" alt="${title} — still ${i+1}">`).join('')}</div></section>`:''}`;
+if(!filmPage){let ix=0;const count=Math.max(1,photos.length);function move(n){ix=(ix+n+count)%count;document.getElementById('still-track').style.transform=`translateX(-${ix*100}%)`;document.getElementById('counter').textContent=`${String(ix+1).padStart(2,'0')} / ${String(count).padStart(2,'0')} · Images`};document.getElementById('prev').onclick=()=>move(-1);document.getElementById('next').onclick=()=>move(1)}setupDetailLoop(el);jumpTo(0)}
+document.addEventListener('visibilitychange',()=>{const v=document.querySelector('#dynamic-detail .detail-loop');if(v){if(document.hidden)v.pause();else if(!matchMedia('(prefers-reduced-motion: reduce)').matches&&v.getBoundingClientRect().top<innerHeight&&v.getBoundingClientRect().bottom>0)v.play().catch(()=>{});}});
+window.addEventListener('hashchange',route);route();
+</script><script>
+(()=>{
+ const root=document.querySelector('.photo-carousel');if(!root)return;
+ const track=root.querySelector('.carousel-track'),slides=[...track.children],viewport=root.querySelector('.carousel-viewport');
+ const count=root.querySelector('.carousel-counter'),pause=root.querySelector('.carousel-pause');
+ let index=0,paused=false,timer=null;
+ const visible=()=>window.matchMedia('(max-width:580px)').matches?1:window.matchMedia('(max-width:850px)').matches?2:3;
+ const max=()=>Math.max(0,slides.length-visible());
+ function render(){index=Math.max(0,Math.min(index,max()));track.style.transform=`translateX(-${slides[index].offsetLeft-slides[0].offsetLeft}px)`;count.textContent=`${String(index+1).padStart(2,'0')} / ${String(slides.length).padStart(2,'0')}`}
+ function advance(dir){index=(index+dir>max())?0:(index+dir<0?max():index+dir);render()}
+ root.querySelectorAll('[data-dir]').forEach(b=>b.addEventListener('click',()=>advance(Number(b.dataset.dir))));
+ function stop(){if(timer)clearInterval(timer);timer=null}
+ function start(){stop();if(paused||window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;timer=setInterval(()=>{if(!document.hidden)advance(1)},4300)}
+ root.addEventListener('mouseenter',stop);root.addEventListener('mouseleave',start);
+ root.addEventListener('focusin',stop);root.addEventListener('focusout',e=>{if(!root.contains(e.relatedTarget))start()});
+ pause.addEventListener('click',()=>{paused=!paused;pause.textContent=paused?'▶':'Ⅱ';pause.setAttribute('aria-pressed',String(paused));pause.setAttribute('aria-label',paused?'Resume automatic scrolling':'Pause automatic scrolling');paused?stop():start()});
+ window.addEventListener('resize',render);document.addEventListener('visibilitychange',()=>{if(!document.hidden)render()});
+ let touchX=null;viewport.addEventListener('touchstart',e=>{touchX=e.touches[0].clientX},{passive:true});viewport.addEventListener('touchend',e=>{if(touchX!==null){let d=e.changedTouches[0].clientX-touchX;if(Math.abs(d)>45)advance(d<0?1:-1);touchX=null}},{passive:true});
+ render();start();
+})();
+</script><script>
+/* Album pages: independent editorial gallery grid, expandable for 10–30+ images. */
+function renderGallery(item,el){
+ const safeText=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ const photoPath=p=>{if(!p)return '';const v=String(p);return /^(media\/|\/media\/|https:\/\/)/.test(v)?v.replace(/^\/media\//,'media/'):''};
+ const actual=[...(item.gallery||[])].filter(photoPath);
+ if(item.cover && photoPath(item.cover) && !actual.includes(item.cover))actual.unshift(item.cover);
+ // Only the stand-alone mockup uses 16 sample frames. Real CMS images replace them.
+ const demo=actual.length===0,frames=demo?[{src:'',i:0}]:actual.map((src,i)=>({src:photoPath(src),i}));
+ const cards=frames.map(({src,i})=>`<button type="button" class="album-frame album-frame-${i%7}" data-album-index="${i}" aria-label="Open image ${i+1}">${src?`<img src="${safeText(src)}" alt="${safeText(item.title)} — photograph ${i+1}" loading="lazy">`:`<span class="album-placeholder-number">${String(i+1).padStart(2,'0')}</span><span class="album-placeholder-caption">PHOTOGRAPH / ${safeText(item.title)}</span>`}</button>`).join('');
+ el.innerHTML=`<div class="album-page"><div class="album-topline"><a class="album-back" href="#photography">← BACK TO STILL IMAGES</a><span>PHOTOGRAPHY / SELECTED SERIES</span></div><div class="album-heading"><div><span class="album-eyebrow">PHOTO SERIES — ${String(frames.length).padStart(2,'0')} IMAGES</span><h1>${safeText(item.title)}<span class="red-dot">.</span></h1></div><p>${safeText(item.description||'A photographic series.')}</p></div>${demo?'<div class="album-demo-note">PHOTOGRAPHS FOR THIS SERIES WILL BE ADDED SOON.</div>':''}<div class="album-grid">${cards}</div><div class="album-end"><span>END OF SERIES / ${safeText(item.title)}</span><a href="#photography">ALL PHOTO SERIES ↗</a></div></div><div class="album-lightbox" id="album-lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden><button type="button" class="album-close" aria-label="Close photo">✕</button><button type="button" class="album-nav album-prev" aria-label="Previous photo">←</button><div class="album-lightbox-center" id="album-lightbox-center"></div><button type="button" class="album-nav album-next" aria-label="Next photo">→</button><div class="album-lightbox-caption" id="album-lightbox-caption"></div></div>`;
+ const modal=el.querySelector('#album-lightbox'),center=el.querySelector('#album-lightbox-center'),caption=el.querySelector('#album-lightbox-caption');let current=0;
+ function show(i){current=(i+frames.length)%frames.length;const f=frames[current];center.innerHTML=f.src?`<img src="${safeText(f.src)}" alt="${safeText(item.title)} — image ${current+1}">`:`<div class="album-modal-placeholder"><strong>${String(current+1).padStart(2,'0')}</strong><span>PHOTO PLACEHOLDER</span></div>`;caption.textContent=`${item.title.toUpperCase()}  /  ${String(current+1).padStart(2,'0')} — ${String(frames.length).padStart(2,'0')}`;modal.hidden=false;document.body.style.overflow='hidden';}
+ function close(){modal.hidden=true;document.body.style.overflow='';}
+ el.querySelectorAll('[data-album-index]').forEach(b=>b.addEventListener('click',()=>show(Number(b.dataset.albumIndex))));
+ modal.querySelector('.album-close').onclick=close;modal.querySelector('.album-prev').onclick=()=>show(current-1);modal.querySelector('.album-next').onclick=()=>show(current+1);
+ modal.addEventListener('click',e=>{if(e.target===modal)close()});
+ const key=e=>{if(modal.hidden)return;if(e.key==='Escape')close();if(e.key==='ArrowRight')show(current+1);if(e.key==='ArrowLeft')show(current-1)};
+ // Avoid duplicate listeners when navigating between albums.
+ if(window.__albumKeyHandler)document.removeEventListener('keydown',window.__albumKeyHandler);
+ window.__albumKeyHandler=key;document.addEventListener('keydown',key);
+ window.__albumClose=close;
+}
+</script>
+<script>
+/* Homepage Music Videos: rotate existing CMS cover/gallery images. */
+(()=>{const target=document.querySelector('.music-cover-data');if(!target)return;const link=target.closest('.project-visual'),img=link?.querySelector('img');if(!img)return;let sources=[];try{sources=JSON.parse(target.textContent).filter(Boolean).map(s=>String(s).replace(/^\/media\//,'media/'));}catch(e){return;}if(sources.length<2)return;let i=0;setInterval(()=>{if(document.hidden||!document.getElementById('main')||document.getElementById('main').classList.contains('hidden'))return;i=(i+1)%sources.length;img.src=sources[i];},4200);})();
+</script>
+</body></html>

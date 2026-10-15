@@ -1,0 +1,32 @@
+KIM-FABIO — WEBSITE + ONLINE-VERWALTUNG
+
+WAS ENTHALTEN IST
+- Dein vorhandener Editorial-Look (Schrift, Farben, Layout)
+- Vier Projekte und drei Fotogalerien als Startinhalte
+- Pages CMS für neue Projekte, Galerien, Texte und Foto-Uploads
+- GitHub Pages für automatische Veröffentlichung
+
+EINMALIGE EINRICHTUNG
+1. Kostenloses Konto bei github.com anlegen oder anmelden.
+2. Neues Repository anlegen, zum Beispiel kim-fabio-portfolio.
+3. Alle Dateien und Ordner aus diesem ZIP in das Repository hochladen. Auch die versteckte Datei .pages.yml und den Ordner .github! GitHub Upload im Browser zeigt versteckte Dateien unter Umständen nicht einfach an; alternativ das ZIP lokal entpacken und die enthaltenen Dateien per GitHub Desktop hochladen.
+4. GitHub Repository > Settings > Pages > Build and deployment > Source: GitHub Actions.
+5. Auf https://app.pagescms.org/ mit GitHub anmelden und Pages CMS für das Repository autorisieren.
+6. Repository öffnen: Filmprojekte, Fotogalerien und Startseite lassen sich dort bearbeiten.
+7. Nach Änderungen wird der Build per GitHub Actions neu ausgeführt. In Actions prüfen, ob er erfolgreich ist.
+8. Zuerst die GitHub-Pages-Testadresse verwenden. Die bestehende Domain kim-fabio.com noch NICHT umstellen.
+
+BILDER HOCHLADEN
+Projekt oder Galerie öffnen, Titelbild auswählen, weitere Bilder im Feld Weitere Bilder hinzufügen, speichern.
+Große Originalbilder vorher auf etwa 2000 bis 2600 px Kantenlänge als JPG oder WebP exportieren.
+
+NEUE PROJEKTE
+Im CMS eine neue Projektdatei anlegen, Titel, URL-Kurzname (nur kleinbuchstaben und bindestriche), Texte, Bilder, Reihenfolge und Öffentlich sichtbar ausfüllen.
+
+WICHTIG
+- Der GitHub-Account ist die Anmeldung für den Editor; es gibt noch keinen eigenen /admin-Pfad.
+- Das CMS ist erst ONLINE nutzbar, nachdem du das Repository verbunden hast.
+- Bei GitHub Pages ist ein öffentliches Repository für kostenlose Veröffentlichung der unkomplizierteste Weg. Keine privaten Daten in die Dateien laden.
+- Die Website ist derzeit ein funktionaler STARTER, nicht fertig auf deiner Domain installiert.
+- Impressum, Datenschutz und finale Kontaktadresse müssen vor öffentlicher Nutzung geprüft werden.
+- Für ein Repo mit GitHub Pages unter /repo-name/ können absolute /media/ URLs falsch sein. Für die endgültige Domain am Root funktionieren sie. Für eine Test-Subdomain sollten Medienpfade angepasst werden.
