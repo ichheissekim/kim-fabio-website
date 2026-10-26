@@ -1,0 +1,21 @@
+{
+  "title": "Prague Moon",
+  "slug": "praguemoon",
+  "category": "Visual experiments / Photography",
+  "summary": "An exploration of light, atmosphere and the fleeting moments between day and night.",
+  "roles": "Photography",
+  "year": "2026",
+  "heading": "Prague Moon",
+  "description": "A photographic study of Prague at dusk, following the moon as it rises above the city's rooftops, bridges and riverbanks. Between fading daylight and deepening shadows, familiar urban scenes become quiet, almost cinematic compositions.",
+  "cover": "/media/dscf0702.jpg",
+  "gallery": [
+    "/media/dscf0518.jpg",
+    "/media/dscf0734.jpg",
+    "/media/dscf0530.jpg",
+    "/media/dscf0568.jpg",
+    "/media/dscf0626.jpg",
+    "/media/dscf0472.jpg",
+    "/media/dscf0549.jpg"
+  ],
+  "published": false
+}
