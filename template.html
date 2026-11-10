@@ -281,6 +281,38 @@ footer .hy-contact{
 .brand-logo{display:block;width:clamp(105px,10vw,165px);height:auto}
 .hero .hero-copy .hy-title{width:100%;max-width:100%;margin:0;line-height:1}
 .hero-logo{display:block;width:100%;height:auto;max-width:100%;object-fit:contain}
+ /* Startseitenfoto: Zoom und About-Link */
+.hero-picture {
+  overflow: hidden;
+}
+
+.hero-picture > a {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-picture > a img {
+  transition: transform 0.4s ease;
+}
+
+.hero-picture > a:hover img {
+  transform: scale(1.025);
+}
+
+.hero-picture > a::after {
+  content: "ABOUT / KIM-FABIO ↗";
+  position: absolute;
+  bottom: 18px;
+  left: 18px;
+  padding: 14px 16px;
+  background: #f1efe9;
+  color: #171715;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  pointer-events: none;
+}
 @media(max-width:760px){.brand-logo{width:105px}.hero-logo{width:100%}}
 
 /* Window Shopper: festival laurels */
