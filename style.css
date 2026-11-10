@@ -8,3 +8,69 @@
 @media(max-width:700px){.big{font-size:clamp(48px,12vw,90px)}.still-slide{min-height:60vw}}
 
 .project-visual img,.photo-tile img,.still-slide img,.filmframe img,.detail-gallery img{width:100%;height:100%;object-fit:cover;display:block}.project-visual:has(img):before{display:none}.project-visual{color:#eee}.photo-tile{padding:0;overflow:hidden}.photo-entry:hover img{transform:scale(1.025)}.photo-tile img{transition:transform .3s}.detail-gallery>div{overflow:hidden}.detail-gallery img{object-fit:contain}.still-slide{padding:0}.still-slide img{max-height:680px;object-fit:contain}.empty-note{padding:30px;border:1px solid #888;font-size:13px}.project-info h3{overflow-wrap:anywhere}
+
+/* WINDOW SHOPPER – FESTIVAL LAURELS */
+
+.laurel-strip {
+  background: #181818;
+  overflow: hidden;
+  padding: 32px 0 42px;
+}
+
+.laurel-track {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  animation: laurels-scroll 45s linear infinite;
+}
+
+.laurel-group {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 70px;
+  padding-right: 70px;
+}
+
+.laurel-group img {
+  display: block;
+  width: auto;
+  height: 90px;
+  max-width: 200px;
+  object-fit: contain;
+}
+
+@keyframes laurels-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 700px) {
+  .laurel-strip {
+    padding: 24px 0 32px;
+  }
+
+  .laurel-group {
+    gap: 40px;
+    padding-right: 40px;
+  }
+
+  .laurel-group img {
+    height: 65px;
+    max-width: 150px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .laurel-track {
+    animation: none;
+  }
+
+  .laurel-strip {
+    overflow-x: auto;
+  }
+}
