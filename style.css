@@ -74,3 +74,6 @@
     overflow-x: auto;
   }
 }
+.laurel-strip:hover .laurel-track {
+  animation-play-state: running !important;
+}
