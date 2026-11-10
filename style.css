@@ -21,7 +21,7 @@
   display: flex;
   width: max-content;
   align-items: center;
-  animation: laurels-scroll 45s linear infinite;
+  animation: laurels-scroll 28s linear infinite;
 }
 
 .laurel-group {
